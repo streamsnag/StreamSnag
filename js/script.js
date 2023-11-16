@@ -32,20 +32,21 @@ function addComment(commentsId, commentId, formId) {
                 commentDiv.innerHTML = '<p>' + name + ': ' + escapedCommentText.innerHTML.replace(/\n/g, "<br>") + '</p>' +
                     '<div class="comment-meta">Publicado el ' + formattedDateTime + '</div>';
 
-                document.getElementById(commentsId).appendChild(commentDiv);
+                        // Inserta el comentario al principio de la lista de comentarios
+                        document.getElementById(commentsId).prepend(commentDiv);
 
-                document.getElementById(commentId).value = "";
-                displayErrorMessage("");
+                        document.getElementById(commentId).value = "";
+                        displayErrorMessage("");
+                    } else {
+                        displayErrorMessage("Por favor, ingresa un comentario válido.");
+                    }
+                } else {
+                    displayErrorMessage("Por favor, ingresa un comentario válido.");
+                }
             } else {
-                displayErrorMessage("Por favor, ingresa un comentario válido.");
+                displayErrorMessage("Solo el administrador puede agregar comentarios en esta sección.");
             }
-        } else {
-            displayErrorMessage("Por favor, ingresa un comentario válido.");
         }
-    } else {
-        displayErrorMessage("Solo el administrador puede agregar comentarios en esta sección.");
-    }
-}
 
 function showSection(sectionId) {
     const posts = document.querySelectorAll('.post');
