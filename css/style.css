@@ -100,43 +100,27 @@ button:hover {
     color: #888;
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    nav a {
-        margin: 5px 0;
-        display: block;
-    }
-
-    .post {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .commentForm {
-        width: 100%;
-    }
-
-    input, textarea, button {
-        width: 100%;
-    }
-
-    .comment {
-        width: 90%;
-        margin: 10px auto;
-    }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* Estilos para dispositivos más grandes */
-@media (min-width: 481px) {
-    /* Estilos para tamaños mayores a celulares */
+footer p {
+    margin: 5px 0;
+}
+
+footer .donate-link {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de donaciones oculta */
+#bitcoinDonation {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
 }
