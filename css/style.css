@@ -100,41 +100,43 @@ button:hover {
     color: #888;
 }
 
-/* Estilos para pantallas de celulares */
 @media (max-width: 480px) {
     header {
-        padding: 10px 0;
+        padding: 20px 0;
+        text-align: center;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
 
     nav a {
         margin: 5px 0;
+        display: block;
     }
 
     .post {
         width: 90%;
+        margin: 0 auto;
     }
 
-    /* Otros ajustes para pantallas pequeñas */
+    .commentForm {
+        width: 100%;
+    }
+
+    input, textarea, button {
+        width: 100%;
+    }
+
+    .comment {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
-
-/* Estilos comunes para dispositivos de tamaño mayor a celulares */
+/* Estilos para dispositivos más grandes */
 @media (min-width: 481px) {
-    header {
-        padding: 20px 0;
-    }
-
-    nav {
-        justify-content: center;
-    }
-
-    /* Otros ajustes para tamaños de pantalla mayores a celulares */
+    /* Estilos para tamaños mayores a celulares */
 }
-
-/* Otros estilos comunes que se aplicarán independientemente del tamaño de pantalla */
-/* ... */
