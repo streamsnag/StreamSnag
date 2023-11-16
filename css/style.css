@@ -8,29 +8,30 @@ body {
 header {
     text-align: center;
     background-color: #333;
-    padding: 20px 0;
+    padding: 4vw 0;
 }
 
 h1 {
     color: #2ecc71;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 2vw;
+    font-size: 5vw;
 }
 
 nav {
     display: flex;
     justify-content: center;
     background-color: #444;
-    padding: 10px 0;
+    padding: 2vw 0;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 1.5vw 3vw;
     border-radius: 3px;
     transition: background-color 0.3s;
-    margin: 0 5px;
+    margin: 0 2vw;
 }
 
 nav a:hover {
@@ -38,8 +39,8 @@ nav a:hover {
 }
 
 main {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 4vw;
+    padding: 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,8 +48,8 @@ main {
 
 .post {
     border: 1px solid #444;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 4vw;
+    padding: 4vw;
     background-color: #333;
     width: 80%;
     border-radius: 5px;
@@ -56,8 +57,8 @@ main {
 
 .comment {
     border: 1px solid #444;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 2vw 0;
+    padding: 2vw;
     background-color: #333;
     border-radius: 5px;
 }
@@ -67,9 +68,9 @@ main {
 }
 
 input, textarea, button {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 90%;
+    padding: 3vw;
+    margin-bottom: 3vw;
     box-sizing: border-box;
     border-radius: 3px;
     border: none;
@@ -81,35 +82,35 @@ button {
     background-color: #2ecc71;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2vw 3vw rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #27ae60;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3vw 4vw rgba(0, 0, 0, 0.2);
 }
 
 #errorMessage {
     color: #ff6666;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 4vw;
 }
 
 .comment-meta {
-    font-size: 0.8em;
+    font-size: 2vw;
     color: #888;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 3vw;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10vw;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 2vw 0;
 }
 
 footer .donate-link {
@@ -121,31 +122,43 @@ footer .donate-link {
 /* Estilos para la sección de donaciones oculta */
 #bitcoinDonation {
     display: none;
-    margin-top: 20px;
+    margin-top: 4vw;
     text-align: center;
+}
+
+.comments {
+    max-height: 600px; /* Establece la altura máxima de la sección de comentarios */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.comment {
+    border: 1px solid #444;
+    margin: 2vw 0;
+    padding: 2vw;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 /* Media queries para dispositivos móviles */
 @media only screen and (max-width: 600px) {
-    /* Ajustes para dispositivos móviles */
-    body {
-        font-size: 14px;
-    }
-
     header {
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     h1 {
         font-size: 24px;
+        margin-bottom: 10px;
     }
 
     nav {
         padding: 8px 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav a {
         padding: 6px 12px;
+        margin: 5px;
     }
 
     main {
@@ -156,5 +169,7 @@ footer .donate-link {
         width: 100%;
     }
 
-    /* Otros ajustes para dispositivos móviles */
+    .commentForm {
+        width: 90%;
+    }
 }
