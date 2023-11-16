@@ -32,7 +32,9 @@ function addComment(commentsId, commentId, formId) {
                 commentDiv.innerHTML = '<p>' + name + ': ' + escapedCommentText.innerHTML.replace(/\n/g, "<br>") + '</p>' +
                     '<div class="comment-meta">Publicado el ' + formattedDateTime + '</div>';
 
-                document.getElementById(commentsId).appendChild(commentDiv);
+                // Modificación aquí para agregar el comentario al principio
+                const commentsSection = document.getElementById(commentsId);
+                commentsSection.insertBefore(commentDiv, commentsSection.firstChild);
 
                 document.getElementById(commentId).value = "";
                 displayErrorMessage("");
