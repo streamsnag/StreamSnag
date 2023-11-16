@@ -99,3 +99,12 @@ button:hover {
     font-size: 0.8em;
     color: #888;
 }
+/* Consulta de medios para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    /* Modifica los estilos para adaptarse a pantallas pequeñas */
+    /* Por ejemplo, podrías cambiar el tamaño del texto, ajustar márgenes o tamaños de elementos */
+}
