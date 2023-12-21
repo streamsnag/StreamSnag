@@ -1,173 +1,193 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    background-color: #181818;
-    color: #fff;
-}
+        /* Estilos personalizados para el botón */
+        .adsterraButton {
+            display: inline-block;
+            padding: 10px 60px; /* Aumenta el padding para hacer el botón más largo */
+            background-color: #2ecc71;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #27ae60;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
 
-header {
-    text-align: center;
-    background-color: #333;
-    padding: 20px 0;
-}
+        .adsterraButton:hover {
+            background-color: #27ae60;
+            border-color: #2ecc71;
+        }
 
-h1 {
-    color: #2ecc71;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-    margin: 0 5px;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-main {
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post {
-    border: 1px solid #444;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #333;
-    width: 80%;
-    border-radius: 5px;
-}
-
-.comment {
-    border: 1px solid #444;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-.commentForm {
-    width: 80%;
-}
-
-input, textarea, button {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    border: none;
-    background-color: #444;
-    color: #fff;
-}
-
-button {
-    background-color: #2ecc71;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-    background-color: #27ae60;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-#errorMessage {
-    color: #ff6666;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.comment-meta {
-    font-size: 0.8em;
-    color: #888;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer .donate-link {
-    color: #2ecc71;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Estilos para la sección de donaciones oculta */
-#bitcoinDonation {
-    display: none;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.comments {
-    max-height: 600px; /* Establece la altura máxima de la sección de comentarios */
-    overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido excede la altura máxima */
-}
-
-.comment {
-    border: 1px solid #444;
-    margin: 2vw 0;
-    padding: 2vw;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-/* Media queries para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    /* Ajustes para dispositivos móviles */
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 10px 0;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    nav {
-        padding: 8px 0;
-    }
-
-    nav a {
-        padding: 6px 12px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .post {
-        width: 100%;
-    }
-
-    /* Otros ajustes para dispositivos móviles */
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #181818;
+            color: #fff;
+        }
+        
+        header {
+            text-align: center;
+            background-color: #333;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            color: #2ecc71;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        main {
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .post {
+            border: 1px solid #444;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #333;
+            width: 80%;
+            border-radius: 5px;
+        }
+        
+        .comment {
+            border: 1px solid #444;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        
+        .commentForm {
+            width: 80%;
+        }
+        
+        input, textarea, button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border: none;
+            background-color: #444;
+            color: #fff;
+        }
+        
+        button {
+            background-color: #2ecc71;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:hover {
+            background-color: #27ae60;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        #errorMessage {
+            color: #ff6666;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .comment-meta {
+            font-size: 0.8em;
+            color: #888;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
+        footer .donate-link {
+            color: #2ecc71;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Estilos para la sección de donaciones oculta */
+        #bitcoinDonation {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .comments {
+            max-height: 600px; /* Establece la altura máxima de la sección de comentarios */
+            overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido excede la altura máxima */
+        }
+        
+        .comment {
+            border: 1px solid #444;
+            margin: 2vw 0;
+            padding: 2vw;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        
+        /* Media queries para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            /* Ajustes para dispositivos móviles */
+            body {
+                font-size: 14px;
+            }
+        
+            header {
+                padding: 10px 0;
+            }
+        
+            h1 {
+                font-size: 24px;
+            }
+        
+            nav {
+                padding: 8px 0;
+            }
+        
+            nav a {
+                padding: 6px 12px;
+            }
+        
+            main {
+                padding: 10px;
+            }
+        
+            .post {
+                width: 100%;
+            }
+        
+            /* Otros ajustes para dispositivos móviles */
+        }
