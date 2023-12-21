@@ -22,7 +22,7 @@ function addComment(commentsId, commentId, formId) {
 
     // Aquí verificamos si el usuario actual es el administrador (d4ta) antes de permitir comentarios
     if (myUniqueID === "d4ta") {
-        if (/^[a-zA-Z0-9.,!? :()+$\n@._-]*$/.test(commentText)) {
+        if (/^[a-zA-Z0-9.,!? :()+%*#$\n@._-]*$/.test(commentText)) {
             const escapedCommentText = document.createElement('div');
             escapedCommentText.innerText = commentText;
 
