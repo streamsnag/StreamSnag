@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamSnag</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>StreamSnag</h1>
+        <nav>
+            <nav>
+                <a href="../disneyplus/disneyplus.html">Disney Plus</a>
+                <a href="../starplus/starplus.html">Star Plus</a>
+                <a href="../hbomax/hbomax.html">HBO Max</a>
+                <a href="../paramountplus/paramountplus.html">Paramount Plus</a>
+                <a href="../crunchyroll/crunchyroll.html">Crunchyroll</a>
+                <!-- Agrega más enlaces de navegación para otras secciones -->
+            </nav>
+    </header>
+    
+    <main>
+
+        <div id="ParamountPlus" class="post">
+            <h2>Paramount Plus</h2>
+            <p>Contenido de Paramount Plus...</p>
+            <div class="comments" id="commentsParamountPlus">
+                <!-- Aquí se cargarán los comentarios dinámicamente con JavaScript -->
+            </div>
+            <form class="commentForm" id="formParamountPlus">
+                <input type="hidden" name="section" value="ParamountPlus">
+                <label for="commentParamountPlus">Deja tu Comentario:</label>
+                <textarea id="commentParamountPlus" rows="4" required></textarea>
+                <button type="button" onclick="addComment('commentsParamountPlus', 'commentParamountPlus', 'formParamountPlus')">Publicar Comentario</button>
+            </form>
+        </div>
+
+        <!-- Agrega más publicaciones con sus propios bloques de comentarios para otras secciones -->
+
+    </main>
+
+    <footer>
+        <p>Contacto: @d.4.t.a</p>
+        <p><a href="#" class="donate-link" onclick="showBitcoinDonation()">Donaciones</a></p>
+        <!-- Sección oculta de donaciones Bitcoin -->
+        <div id="bitcoinDonation">
+            <p>Aquí puedes realizar donaciones a través de Bitcoin:</p>
+            <!-- Agrega aquí la dirección de tu billetera Bitcoin o texto informativo -->
+            <p>bc1qs7msvj2e3c8v63uu5l9g4gatqr58np9end3hqk</p>
+        </div>
+    </footer>
+
+    <div id="errorMessage" style="color: red;"></div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+

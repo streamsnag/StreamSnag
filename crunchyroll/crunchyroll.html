@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamSnag</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>StreamSnag</h1>
+        <nav>
+            <nav>
+                <a href="../disneyplus/disneyplus.html">Disney Plus</a>
+                <a href="../starplus/starplus.html">Star Plus</a>
+                <a href="../hbomax/hbomax.html">HBO Max</a>
+                <a href="../paramountplus/paramountplus.html">Paramount Plus</a>
+                <a href="../crunchyroll/crunchyroll.html">Crunchyroll</a>
+                <!-- Agrega más enlaces de navegación para otras secciones -->
+            </nav>
+    </header>
+    
+    <main>
+
+        <div id="Crunchyroll" class="post">
+            <h2>Crunchyroll</h2>
+            <p>Contenido de Crunchyroll...</p>
+            <div class="comments" id="commentsCrunchyroll">
+                <!-- Aquí se cargarán los comentarios dinámicamente con JavaScript -->
+
+                <div class="comment"><p><span style="color:#418DE6;">Usuario 922383</span>: chrismeitx@gmail.com:Mc384179<br><br>armendboy_307@hotmail.com:Makavelithadon93<br><br>jsmytty@yahoo.com:Bailey0715<br><br>tcalhoun03@icloud.com:Calbros1521<br><br>ianpooran@gmail.com:Binky2003<br><br>kaank2001@gmail.com:010979Mk<br><br>isarex88@gmail.com:Luna123s<br><br>clemdezalle@gmail.com:Clem45100<br><br>james.d.binsted@gmail.com:803Gentry<br><br>playspaneric9@gmail.com:ZAk82RbmR</p><div class="comment-meta">Publicado el 1/12/2023, 0:08:12</div></div>
+                
+            </div>
+            <form class="commentForm" id="formCrunchyroll">
+                <input type="hidden" name="section" value="Crunchyroll">
+                <label for="commentCrunchyroll">Deja tu Comentario:</label>
+                <textarea id="commentCrunchyroll" rows="4" required></textarea>
+                <button type="button" onclick="addComment('commentsCrunchyroll', 'commentCrunchyroll', 'formCrunchyroll')">Publicar Comentario</button>
+            </form>
+        </div>
+
+        <!-- Agrega más publicaciones con sus propios bloques de comentarios para otras secciones -->
+
+    </main>
+
+    <footer>
+        <p>Contacto: @d.4.t.a</p>
+        <p><a href="#" class="donate-link" onclick="showBitcoinDonation()">Donaciones</a></p>
+        <!-- Sección oculta de donaciones Bitcoin -->
+        <div id="bitcoinDonation">
+            <p>Aquí puedes realizar donaciones a través de Bitcoin:</p>
+            <!-- Agrega aquí la dirección de tu billetera Bitcoin o texto informativo -->
+            <p>bc1qs7msvj2e3c8v63uu5l9g4gatqr58np9end3hqk</p>
+        </div>
+    </footer>
+
+    <div id="errorMessage" style="color: red;"></div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
